@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KK Classes - Khora Colony's Premier Coaching Center</title>
+    <title>Thank You! - KK Classes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Google tag (gtag.js) - Google Ads Conversion Tracking -->
+    <!-- Google tag (gtag.js) - Google Ads Script -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11144654040"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -17,319 +17,64 @@
       gtag('js', new Date());
       gtag('config', 'AW-11144654040');
     </script>
+    
+    <!-- CRITICAL: GOOGLE ADS CONVERSION TRACKING EVENT -->
+    <!-- This script executes the conversion event when the user lands on this page. -->
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-11144654040/YOUR_CONVERSION_LABEL'});
+      // ⚠️ ACTION REQUIRED: Replace 'YOUR_CONVERSION_LABEL' with the unique label provided by Google Ads for this conversion action (e.g., 'fdfdDDFDDFDF-fdfdsFDSFDSFDSFDS').
+    </script>
 
-    <!-- Chosen Palette: Warm Ivory & Energetic Orange -->
-    <!-- Application Structure Plan: A single-page, scrollable layout with a clear narrative flow designed for conversion. It starts with a powerful Hero section to build immediate trust and present the core offer. This is followed by a "Why Us" section using visually appealing cards to detail benefits. An interactive "Programs" section allows users to self-select their child's grade level, reducing clutter and improving user experience. The page concludes with a final, strong Call-to-Action to maximize lead generation. This structure guides parents logically from problem-awareness to solution-acceptance. -->
-    <!-- Visualization & Content Choices: 
-        - "50+ Satisfied Families...": Goal: Build trust. Method: Large, bold text in the hero. Justification: Maximum impact for the strongest social proof.
-        - "Why Parents Choose...": Goal: Detail benefits. Method: A responsive grid of icon-based feature cards. Interaction: Subtle hover effects. Justification: More modern and mobile-friendly than a plain table.
-        - "Expert Classes...": Goal: Easy navigation of subjects. Method: Interactive tabs for 'Foundation' and 'Senior Secondary' with sub-tabs for streams. Interaction: JS-powered show/hide functionality. Justification: Prevents an overwhelming list and allows users to find relevant info quickly.
-        - CTA Button: Goal: Drive lead generation. Method: Large, high-contrast button. Interaction: A simple link to the external tracking page. Justification: Clear and unmissable, focusing on the primary conversion action.
-    -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Poppins', sans-serif;
         }
-        .hero-gradient {
-            background: linear-gradient(180deg, rgba(255,251,235,0) 0%, #FFFBEB 100%);
-        }
-        .cta-button {
-            transition: all 0.3s ease;
-        }
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px -10px rgba(249, 115, 22, 0.5);
-        }
-        .tab-btn {
-            transition: all 0.2s ease-in-out;
-        }
-        .tab-btn.active {
-            background-color: #F97316;
-            color: white;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .benefit-card {
-            transition: all 0.3s ease;
-            border: 1px solid #E7E5F4;
-        }
-        .benefit-card:hover {
-            transform: translateY(-5px);
-            border-color: #F97316;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+        .thank-you-card {
+            max-width: 600px;
+            margin: 100px auto;
         }
     </style>
 </head>
 <body class="bg-amber-50 text-slate-800">
 
-    <div class="container mx-auto px-4">
-        <!-- Header -->
-        <header class="py-6 flex justify-between items-center">
-            <div class="flex items-center">
-                <h1 class="text-3xl md:text-4xl font-bold text-slate-900">KK Classes</h1>
-                <span class="ml-4 text-sm text-slate-600 hidden sm:block">Khora Colony's Trusted Name in Education</span>
+    <div class="container mx-auto px-4 thank-you-card">
+        <div class="bg-white p-8 sm:p-12 rounded-2xl shadow-2xl border-t-8 border-orange-500 text-center">
+            
+            <svg class="mx-auto h-16 w-16 text-green-500 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Thank You for Booking!</h1>
+            
+            <p class="text-xl text-slate-700 mb-6">Your child's 7-Day Free Trial request has been successfully received.</p>
+            
+            <hr class="border-slate-200 mb-6">
+            
+            <h2 class="text-2xl font-semibold text-orange-600 mb-3">What Happens Next?</h2>
+            <ul class="text-slate-600 list-none space-y-2 text-left inline-block">
+                <li class="flex items-start">
+                    <span class="text-orange-500 mr-2 font-bold">1.</span>
+                    We are reviewing your details now.
+                </li>
+                <li class="flex items-start">
+                    <span class="text-orange-500 mr-2 font-bold">2.</span>
+                    One of our expert counselors will call your provided number **within the next 30 minutes** to confirm the batch timing.
+                </li>
+                <li class="flex items-start">
+                    <span class="text-orange-500 mr-2 font-bold">3.</span>
+                    Your child is all set to start their journey to better grades at KK Classes!
+                </li>
+            </ul>
+
+            <div class="mt-8">
+                <a href="https://kkclasses-source.github.io/KK-Classes-Landing-Page/" class="inline-block bg-orange-500 text-white font-bold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-orange-600 transition">
+                    Return to KK Classes Home
+                </a>
             </div>
-            <a href="tel:+918851078226" class="text-lg font-semibold text-orange-600 hover:text-orange-700 transition duration-150">
-                📞 +91 88510 78226
-            </a>
-        </header>
-
-        <!-- Hero Section -->
-        <section class="text-center pt-12 pb-24 relative">
-             <div class="absolute inset-0 hero-gradient"></div>
-            <div class="relative z-10">
-                <h2 class="text-4xl md:text-6xl font-bold leading-tight max-w-4xl mx-auto">Stop Worrying About Results: Secure Your Child’s Top Grades <span class="text-orange-500">Right Here in Khora Colony.</span></h2>
-                <p class="mt-4 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto"><span class="font-bold text-orange-600">50+ Satisfied Families in Just 3 Months.</span> From Nursery Basics to 12th Board Mastery—The #1 Name for Quality Education.</p>
-                <div class="mt-12">
-                    <a href="#free-trial-form-section" class="cta-button inline-block bg-orange-500 text-white font-bold text-lg px-10 py-4 rounded-lg shadow-lg">
-                        Secure My Child's 7-Day Free Trial &rarr;
-                    </a>
-                </div>
-                <div class="mt-16 max-w-5xl mx-auto aspect-video bg-white rounded-2xl shadow-2xl p-2 border">
-                    <!-- ⚠️ ACTION NEEDED: Logo placeholder still needs to be added next to the H1 in the header! -->
-                    <!-- LATEST AUTHENTIC CLASSROOM PHOTO ADDED BELOW -->
-                    <img src="img_girl.jpg" alt="Realistic photo of students engaging with a tutor at KK Classes, Khora Colony." class="rounded-xl w-full h-full object-cover">
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Us Section -->
-        <section class="py-20">
-            <div class="text-center mb-12">
-                <h3 class="text-4xl font-bold">Why Parents in Khora Colony Trust KK Classes</h3>
-                <p class="mt-2 text-slate-600 max-w-2xl mx-auto">We understand the value of every rupee and every hour spent. Our commitment is simple: Local Expertise, National Results.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="benefit-card bg-white p-8 rounded-2xl text-center">
-                    <div class="text-4xl text-orange-500 mb-4">✓</div>
-                    <h4 class="text-xl font-bold mb-2">Proven Success</h4>
-                    <p class="text-slate-600">Over <span class="font-bold">50 happy students</span> enrolled in the last 90 days. Join the fastest-growing academic community in Khora.</p>
-                </div>
-                <div class="benefit-card bg-white p-8 rounded-2xl text-center">
-                    <div class="text-4xl text-orange-500 mb-4">📍</div>
-                    <h4 class="text-xl font-bold mb-2">Local Convenience</h4>
-                    <p class="text-slate-600">No more long commutes! Located right here, <span class="font-bold">Near Aslam Auto Mobile</span> in Khora Colony, saving time and ensuring safety.</p>
-                </div>
-                <div class="benefit-card bg-white p-8 rounded-2xl text-center">
-                    <div class="text-4xl text-orange-500 mb-4">📚</div>
-                    <h4 class="text-xl font-bold mb-2">Syllabus Mastery</h4>
-                    <p class="text-slate-600">Specialized tutoring for <span class="font-bold">UP Board & Delhi Board</span> curricula. We teach what your child needs to excel.</p>
-                </div>
-                <div class="benefit-card bg-white p-8 rounded-2xl text-center">
-                    <div class="text-4xl text-orange-500 mb-4">⏰</div>
-                    <h4 class="text-xl font-bold mb-2">All-Day Access</h4>
-                    <p class="text-slate-600">Flexible batch timings from <span class="font-bold">Morning to Night</span> to perfectly fit any school schedule.</p>
-                </div>
-                <div class="benefit-card bg-white p-8 rounded-2xl text-center">
-                    <div class="text-4xl text-orange-500 mb-4">🌱</div>
-                    <h4 class="text-xl font-bold mb-2">Foundation Building</h4>
-                    <p class="text-slate-600">Dedicated, fun-filled batches for <span class="font-bold">Nursery to 8th Grade</span>, focused on strong core concepts and confidence.</p>
-                </div>
-                 <div class="benefit-card bg-white p-8 rounded-2xl text-center">
-                    <div class="text-4xl text-orange-500 mb-4">💯</div>
-                    <h4 class="text-xl font-bold mb-2">Risk-Free Trial</h4>
-                    <p class="text-slate-600">A full <span class="font-bold">7-Day Free Trial for ALL classes</span>. Experience our quality teaching with no commitment.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Interactive Programs Section -->
-        <section class="py-20 bg-white rounded-3xl my-10">
-            <div class="text-center mb-12">
-                <h3 class="text-4xl font-bold">Our Expert Classes</h3>
-                <p class="mt-2 text-slate-600">Select your child's level to see the subjects we cover in the free trial.</p>
-            </div>
-            <div class="flex justify-center mb-8 bg-amber-100 p-2 rounded-full max-w-md mx-auto">
-                <button id="btn-foundation" class="tab-btn active flex-1 py-3 px-6 rounded-full font-semibold">Foundation (Nur - 8th)</button>
-                <button id="btn-senior" class="tab-btn flex-1 py-3 px-6 rounded-full font-semibold">Senior (9th - 12th)</button>
-            </div>
-
-            <!-- Foundation Content -->
-            <div id="content-foundation" class="tab-content active text-center max-w-2xl mx-auto">
-                <h4 class="text-2xl font-semibold mb-4">Building Strong Futures</h4>
-                <p class="text-slate-600">Our foundation batches focus on creating a love for learning while mastering core subjects. We build the conceptual clarity needed for future success.</p>
-                <div class="mt-6 flex flex-wrap justify-center gap-3 text-slate-700 font-medium">
-                    <span class="bg-amber-100 px-4 py-2 rounded-full">All Core Subjects</span>
-                    <span class="bg-amber-100 px-4 py-2 rounded-full">Language Skills</span>
-                    <span class="bg-amber-100 px-4 py-2 rounded-full">Mathematics</span>
-                    <span class="bg-amber-100 px-4 py-2 rounded-full">Science Basics</span>
-                </div>
-            </div>
-
-            <!-- Senior Content -->
-            <div id="content-senior" class="tab-content max-w-4xl mx-auto">
-                <div class="flex justify-center mb-6 border-b">
-                     <button id="btn-sub-science" class="sub-tab-btn active py-2 px-4 border-b-2 border-orange-500 font-semibold text-orange-500">Science</button>
-                     <button id="btn-sub-commerce" class="sub-tab-btn py-2 px-4 border-b-2 border-transparent font-semibold text-slate-500">Commerce</button>
-                     <button id="btn-sub-humanities" class="sub-tab-btn py-2 px-4 border-b-2 border-transparent font-semibold text-slate-500">Humanities</button>
-                </div>
-                
-                <div id="sub-content-science" class="sub-tab-content active">
-                    <p class="text-center text-slate-600 mb-4">Mastering the concepts that build careers in technology and medicine.</p>
-                     <div class="flex flex-wrap justify-center gap-3 text-slate-700 font-medium">
-                        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Physics</span>
-                        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Chemistry</span>
-                        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Biology</span>
-                        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Maths</span>
-                        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Science (9th-10th)</span>
-                    </div>
-                </div>
-                <div id="sub-content-commerce" class="sub-tab-content">
-                     <p class="text-center text-slate-600 mb-4">Building the financial and business acumen for tomorrow's leaders.</p>
-                     <div class="flex flex-wrap justify-center gap-3 text-slate-700 font-medium">
-                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">Accounts</span>
-                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">Economics</span>
-                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">Business Studies</span>
-                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">Maths</span>
-                    </div>
-                </div>
-                <div id="sub-content-humanities" class="sub-tab-content">
-                     <p class="text-center text-slate-600 mb-4">Developing critical thinking for civil services and diverse professions.</p>
-                     <div class="flex flex-wrap justify-center gap-3 text-slate-700 font-medium">
-                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Political Science</span>
-                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">History</span>
-                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Social Studies</span>
-                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">English</span>
-                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Hindi</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Final CTA/Lead Form Section -->
-        <section id="free-trial-form-section" class="py-20 max-w-xl mx-auto">
-            <div id="form-container" class="bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border-t-4 border-orange-500">
-                <h3 class="text-3xl font-bold text-center mb-2">Secure Your 7-Day Free Trial</h3>
-                <p class="text-slate-600 text-center mb-8">Fill the form to receive a call back within the hour and book your child's first class.</p>
-                
-                <!-- 🎯 EMAIL INTEGRATION: Data sends directly to caninesuperiority@gmail.com via FormSubmit -->
-                <!-- CRITICAL: Form is configured to redirect to the thank_you.html page on submission -->
-                <form action="https://formsubmit.co/caninesuperiority@gmail.com" method="POST" id="lead-form">
-                    <input type="hidden" name="_subject" value="New 7-Day Trial Lead (Student) from KK Classes Landing Page">
-                    <input type="hidden" name="_template" value="table">
-                    <!-- ⚠️ CRITICAL ACTION: REPLACE YOUR-GITHUB-PAGE-URL with your live GitHub Pages link (e.g., https://username.github.io/repo-name) -->
-                    <input type="hidden" name="_next" value="https://YOUR-GITHUB-PAGE-URL/thank_you.html">
-
-                    <div class="mb-5">
-                        <label for="student_name" class="block text-sm font-medium text-slate-700 mb-1">Student's Name <span class="text-red-500">*</span></label>
-                        <input type="text" id="student_name" name="Student Name" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-orange-500 focus:border-orange-500">
-                    </div>
-                    
-                    <div class="mb-5">
-                        <label for="parent_name" class="block text-sm font-medium text-slate-700 mb-1">Parent's Name (Optional)</label>
-                        <input type="text" id="parent_name" name="Parent Name" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-orange-500 focus:border-orange-500">
-                    </div>
-                    
-                    <div class="mb-5">
-                        <label for="phone" class="block text-sm font-medium text-slate-700 mb-1">Mobile Number <span class="text-red-500">*</span></label>
-                        <input type="tel" id="phone" name="Mobile Number" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-orange-500 focus:border-orange-500">
-                    </div>
-                    
-                    <div class="mb-8">
-                        <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email (Optional)</label>
-                        <input type="email" id="email" name="Email" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-orange-500 focus:border-orange-500">
-                    </div>
-                    
-                    <div class="mb-8">
-                        <label for="child_grade" class="block text-sm font-medium text-slate-700 mb-1">Child's Current Grade (Nur - 12th) <span class="text-red-500">*</span></label>
-                        <select id="child_grade" name="Child's Grade" required class="w-full px-4 py-3 border border-slate-300 rounded-lg appearance-none bg-white focus:ring-orange-500 focus:border-orange-500">
-                            <option value="" disabled selected>Select Grade</option>
-                            <option value="Nursery">Nursery</option>
-                            <option value="KG">K.G.</option>
-                            <option value="Class 1">Class 1</option>
-                            <option value="Class 2">Class 2</option>
-                            <option value="Class 3">Class 3</option>
-                            <option value="Class 4">Class 4</option>
-                            <option value="Class 5">Class 5</option>
-                            <option value="Class 6">Class 6</option>
-                            <option value="Class 7">Class 7</option>
-                            <option value="Class 8">Class 8</option>
-                            <option value="Class 9">Class 9</option>
-                            <option value="Class 10">Class 10</option>
-                            <option value="Class 11">Class 11</option>
-                            <option value="Class 12">Class 12</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="cta-button w-full bg-orange-500 text-white font-bold text-xl px-12 py-4 rounded-lg shadow-lg hover:bg-orange-600">
-                        Book Trial Class Now!
-                    </button>
-                    <p class="mt-3 text-xs text-center text-slate-500">We respect your privacy. Your data will not be shared.</p>
-                </form>
-            </div>
-        </section>
-
-
-        <!-- Footer -->
-        <footer class="text-center py-8 border-t border-slate-200">
-            <p class="font-bold text-lg">KK Classes</p>
-            <p class="text-slate-600">Your Local Partner in Academic Excellence</p>
-            <p class="text-sm text-slate-500 mt-2">📍 Khora Colony, Ghaziabad, Uttar Pradesh</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=28.6250436%2C77.3471349" target="_blank" class="text-sm text-orange-600 hover:underline font-semibold block mt-1">
-                Find Us Near Aslam Auto Mobile (Get Directions)
-            </a>
-            <a href="tel:+918851078226" class="text-xl font-extrabold text-orange-600 block mt-4 hover:text-orange-700 transition duration-150">
-                Call Now: +91 88510 78226
-            </a>
-            <p class="text-sm text-slate-500 mt-4">&copy; 2025 KK Classes. All rights reserved.</p>
-        </footer>
-
+            
+            <p class="mt-8 text-sm text-slate-500">For immediate assistance, please call: +91 88510 78226</p>
+        </div>
     </div>
 
-    <script>
-        // Tab Functionality
-        const foundationBtn = document.getElementById('btn-foundation');
-        const seniorBtn = document.getElementById('btn-senior');
-        const mainTabs = [
-            { btn: foundationBtn, content: document.getElementById('content-foundation') },
-            { btn: seniorBtn, content: document.getElementById('content-senior') }
-        ];
-
-        const subTabs = [
-            { btn: document.getElementById('btn-sub-science'), content: document.getElementById('sub-content-science') },
-            { btn: document.getElementById('btn-sub-commerce'), content: document.getElementById('sub-content-commerce') },
-            { btn: document.getElementById('btn-sub-humanities'), content: document.getElementById('sub-content-humanities') }
-        ];
-
-        function handleTabClick(tabs, clickedBtn) {
-            tabs.forEach(tab => {
-                tab.btn.classList.remove('active');
-                tab.content.classList.remove('active');
-                if(tab.btn.id.startsWith('btn-sub-')) {
-                    tab.btn.classList.remove('border-orange-500', 'text-orange-500');
-                    tab.btn.classList.add('border-transparent', 'text-slate-500');
-                }
-            });
-            clickedBtn.classList.add('active');
-            const contentId = clickedBtn.id.replace('btn-', 'content-');
-            document.getElementById(contentId).classList.add('active');
-             if(clickedBtn.id.startsWith('btn-sub-')) {
-                clickedBtn.classList.add('border-orange-500', 'text-orange-500');
-                clickedBtn.classList.remove('border-transparent', 'text-slate-500');
-            }
-        }
-        
-        mainTabs.forEach(tab => {
-            tab.btn.addEventListener('click', () => handleTabClick(mainTabs, tab.btn));
-        });
-
-        subTabs.forEach(tab => {
-            tab.btn.addEventListener('click', () => handleTabClick(subTabs, tab.btn));
-        });
-
-        // Smooth Scroll for Hero CTA
-        document.querySelector('a[href="#free-trial-form-section"]').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    </script>
 </body>
 </html>
